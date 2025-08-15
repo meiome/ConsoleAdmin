@@ -52,4 +52,6 @@ Per la creazione del codice, ho scelto di renderlo indipendente anche da Doctrin
 
 ---
 
-**Per eventuali info sulla configurazione, contattatemi**, perché questa guida è solo una bozza e dovrò semplificarla e renderla più intuitiva per l'utilizzo.  
+**Per eventuali info sulla configurazione, contattatemi tramite l'apertura di un ISSUE**, perché questa guida è solo una bozza e dovrò semplificarla e renderla più intuitiva per l'utilizzo. 
+
+cercherò di rendere disponibile appena possibile una demo e una documentazione più chiara
