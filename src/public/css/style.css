@@ -1,0 +1,102 @@
+
+
+body{
+	background-color: #eef5f9;
+
+}
+
+*{
+    font-family: Montserrat;
+
+}
+
+.wb-panel{
+	margin-bottom: 16px;
+}
+
+.wb-panel > .head {
+	border-bottom: 1px solid #efefef;
+	color: #2f3c4b;
+    font-weight: 600;
+    /* font-size: 14px; */
+
+}
+
+.wb-table{
+	background-color: white;
+}
+
+.wb-table > tbody > tr > td{
+    padding: 8px;
+}
+
+
+.search-bar{
+
+    border: none;
+    margin: 0px;
+    background-color: #f1f3f4;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.search-bar:focus{
+    background-color: white;
+
+}
+.search-bar > input{
+    outline: none !important;
+    border:none;
+    background-color: transparent;
+        width: 300px;
+    font-size: 16px;
+    vertical-align: middle;
+
+}
+
+.search-bar > button{
+    border:none;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.search-bar > button > img{
+    border:none;
+    background-color: transparent;
+
+}
+.search-bar > input:focus search-bar{
+  background-color: white;
+}
+
+#WBAppBar{
+  background-color: #3f51b5;
+}
+
+
+
+
+
+
+
+/* ================================== */
+
+.wb-menu > li{
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    size: 14px;
+}
+
+
+
+
+/* ================== WB LIST ITEM ================= */
+
+
+.wb-list-item > span{
+    font-family: 'MontSerrat';
+    font-weight: 500;
+		color:black;
+}

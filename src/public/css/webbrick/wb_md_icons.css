@@ -1,0 +1,118 @@
+.wb-icon-64{
+	width: 64px;
+	height: 64px;
+	background-repeat: no-repeat;
+    padding: 4px;
+    background-origin: content-box;
+    background-size: 24px;
+}
+
+.wb-icon-48{
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+    padding: 4px;
+    background-origin: content-box;
+    background-size: 24px;
+}
+
+
+
+.wb-icon-32{
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+    padding: 4px;
+    background-origin: content-box;
+    background-size: 24px;
+}
+
+.wb-icon-24{
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+    padding: 2px;
+    background-origin: content-box;
+    background-size: 24px;
+}
+.fill-black > svg{
+
+}
+
+.wb-icon-32 > svg{
+    width: 100%;
+    height: 100%;
+
+}
+.wb-icon-24 > svg{
+    width: 100%;
+    height: 100%;
+
+}
+.wb-icon-64 > svg{
+    width: 100%;
+    height: 100%;
+
+}
+
+.fill-white > svg:not:first-child{
+    fill:white;
+}
+
+
+
+.fill-black > svg {
+    width: 100%;
+    height: 100%;
+}
+
+.fill-black > svg > path + path{
+    fill:black;
+}
+
+.fill-black > svg > path + path{
+    fill:lightgrey;
+}
+
+/*
+.wb-md-icon-black-menu{
+	background-image: url(/imgs/icons/google-md/menu-black-48dp.svg);
+}
+
+.wb-icon-menu{
+	background-image: url(/imgs/icons/google-md/menu-black-48dp.svg);
+}
+
+
+.wb-icon-menu.filled.white{
+    background-image: url(/imgs/icons/google-md/filled/menu-white-48dp.svg);
+}
+.wb-icon-apps.filled.white{
+    background-image: url(/imgs/icons/google-md/filled/apps-white-48dp.svg);
+}
+
+
+
+
+.wb-md-icon-black-speakerNotes{
+	background-image: url(/imgs/icons/google-md/speaker_notes-black-48dp.svg);
+}
+
+.wb-md-icon-black-edit{
+	background-image: url(/imgs/icons/google-md/edit-black-48dp.svg);
+}
+
+.wb-md-icon-more_vert{
+	background-image: url(/imgs/icons/google-md/more_vert-black-48dp.svg);
+}
+
+.wb-md-icon-person_add_black{
+	background-image: url(/imgs/icons/google-md/person_add-black-48dp.svg);
+
+}
+
+.wb-md-icon-cloud_upload_black{
+	background-image: url(/imgs/icons/google-md/cloud_upload-black-48dp.svg);
+
+}
+*/

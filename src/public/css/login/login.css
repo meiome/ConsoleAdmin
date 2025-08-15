@@ -1,0 +1,363 @@
+/*
+Theme Name: 	CSS base
+Description: 	Responsive Css HTML ecommerce
+Version:     	1.0.0
+Author:
+Text Domain: 	webecommerce
+Domain Path:
+Tags:
+License:    	GNU General Public License v3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+
+order:
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+*/
+
+/*--------------------------
+General
+--------------------------*/
+
+.alert {
+  color:red;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.mailgiapresente {
+  display: inline-block;
+  color:red;
+  font-weight: bold;
+  margin: 15px 0px;
+  font-size: 12px;
+}
+
+html, body {
+  background-color: #61c0c8;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin-bottom: 7px;
+  cursor:pointer;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	color: black;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+div#pagewid {
+  background-color: #61c0c8;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.titoloaccesso {
+  font-family: Antique;
+  color: #c75f6c;
+  font-size: 16px;
+}
+
+form, div#riquadro {
+  background-color: white;
+  display: inline-block;
+  /*border: 0.5px solid #c75f6c;*/
+  width: 300px;
+  box-sizing: border-box;
+}
+
+div#riquadro2{
+  background-color: white;
+  display: inline-block;
+  /*border: 0.5px solid #c75f6c;*/
+  width: 300px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+div#riquadro2 label a{
+
+}
+
+div#spazioblu{
+  background-color: #61c0c8;
+  height: 10px;
+}
+
+label.sr-only, .form-label label{
+  margin: 0 7%;
+  width: 86%;
+  display: block;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 13px;
+}
+
+label i{
+  color: green;
+}
+
+label#infopasswd{
+  margin-bottom: 5px;
+}
+
+.inputch, div.form-data input {
+  display: block;
+  margin: 0 7%;
+  width:86%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+
+div.form-error ul{
+  list-style: none;
+  color: red;
+  font-weight: 400;
+  padding: 0 0;
+}
+
+.btnaccesso{
+}
+
+div#oppure {
+  margin: 10px 0px;
+}
+
+ul.accounts {
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.accounts li {
+  margin: 30px 0;
+  height: 40px;
+  border-bottom: 0.5px solid gray;
+  box-sizing: border-box;
+}
+
+ul.accounts li:hover {
+  background-color: #E8E8E8;
+}
+
+ul.accounts li div.contenitoreicon {
+  float: left;
+  height: 40px;
+  width: 16%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+ul.accounts li div.icon {
+  float: left;
+  height: 34px;
+  width: 100%;
+  background-image: url("/imgs/login/account64px.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+ul.accounts li div.connesso {
+  float: left;
+  height: 6px;
+  width: 100%;
+  background-color: #a4a4a4;
+  box-sizing: border-box;
+}
+
+ul.accounts li div.conteinerdettagli {
+  float: left;
+  height: 40px;
+  width: 73%;
+  margin-right: 3%;
+  box-sizing: border-box;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+div.conteinerdettaglicheckpassword {
+  height: 40px;
+  box-sizing: border-box;
+  font-size: small;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.conteinerdettaglierrorlogin {
+  height: 40px;
+  box-sizing: border-box;
+  font-size: small;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: red;
+}
+
+div.conteinerdettaglicheckpassword .nomecognome{
+  font-weight: bold;
+}
+
+ul.accounts li div.email {
+  float: left;
+  height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul.accounts li div.nomecognome {
+  float: left;
+  height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+ul.accounts li div.rimuoviaccount {
+  float: left;
+  height: 40px;
+  width: 8%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+div#pagealertbox {
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+div#finestraconferma {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  z-index: 20;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+  padding-top: 5%;
+  padding-bottom : 5%;
+}
+
+div#finestraconferma div.testo {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 2em;
+  color: white;
+  width: 100%;
+  height: 40%;
+}
+
+div#finestraconferma div.scelte {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 80px;
+  color: white;
+  width: 100%;
+  height: 40%;
+}
+
+div#finestraconferma div.scelte div{
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  font-size: 80px;
+  color: white;
+  width: 50%;
+  height: 40%;
+}
+
+div#finestraconferma div.scelte div label{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 80px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+/*--------------------------
+Tablet modalità orizzonatale e verticale
+--------------------------*/
+
+@media all and (min-width: 721px) and (max-width: 1279px)  {
+
+  .tooltip:hover .tooltiptext {
+    visibility: hidden;
+  }
+
+}
+
+/*--------------------------
+Smartphone
+--------------------------*/
+
+@media all and (max-width: 720px) {
+
+  .tooltip:hover .tooltiptext {
+    visibility: hidden;
+  }
+
+}

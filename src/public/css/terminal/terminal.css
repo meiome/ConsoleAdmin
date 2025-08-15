@@ -1,0 +1,286 @@
+/*
+Theme Name: 	CSS base
+Description: 	Responsive Css HTML ecommerce
+Version:     	1.0.0
+Author:
+Text Domain: 	webecommerce
+Domain Path: 	/languages
+Tags:
+License:    	GNU General Public License v3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/*--------------------------
+General
+--------------------------*/
+
+.scrivisuterminale {
+  display: inline;
+  margin: 0px 10px;
+}
+
+.scrivisuterminale:hover {
+  cursor: copy;
+}
+
+.terminalcontenitore {
+  background-color: #c0c0c0;
+  box-sizing: border-box;
+  height: 25px;
+  width: 66px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.terminalcontenitore .contenitoretasti {
+  height: 25px;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.terminalcontenitore .contenitoretasti .tasti {
+  height: 97%;
+  float: left;
+  width: 28px;
+  margin: 1.5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#tastocomprimiterminale {
+  display: none;
+}
+
+.terminalcontenitore .contenitoretasti .titolo {
+  height: 97%;
+  margin: 1.5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.terminalcontenitore .contenitoretasti .tasti:hover {
+  cursor: pointer;
+  border: 0.5px solid black;
+}
+
+.terminalcontenitore .contenitoretasti .tasti img {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.terminalcontenitore .input {
+  height: 25px;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.terminalcontenitore .input input {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px;
+  border: 0.5px solid #f75c1e;
+
+
+}
+
+.terminalcontenitore .output {
+  /*height: 25px;*/
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.terminalcontenitore .output ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*height: 25px;*/
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.terminalcontenitore .output div.rigaterminal{
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  /*text-overflow: ellipsis;*/
+  /*white-space: pre;*/
+
+}
+
+.terminalcontenitore .output div.rigaterminal a{
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+
+.terminalcontenitore .output div.mostraprec{
+  /*width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;*/
+  background-color: #dddddd;
+  text-align: right;
+  /*text-overflow: ellipsis;*/
+  /*white-space: pre;*/
+
+}
+
+.terminalcontenitore .output p.pmostraprec {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  cursor: pointer;
+}
+
+.dropbtn {
+  background-color: #ea6c62;
+  color: white;
+  padding: 0px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  border: none;
+}
+
+.dropbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99995;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {border: 1px solid white;}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border-right: 1px solid #e8e8e8;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  word-wrap: break-word;
+}
+
+.sidenav a.gmenu2 {
+  background-color: #8FBC8F;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #e8e8e8;
+}
+
+#gmenutitlecategorie, #gmenutitleinformazioni {
+  border-top: 0.5px solid lightgray;
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#gmenutitlecategorie:hover, #gmenutitleinformazioni:hover {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.sidenav a.closebtn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.sidenav a#accedi {
+  background-color: #e8e8e8;
+  border-top: 10px solid #e8e8e8;
+  font-size: 15px;
+}
+
+.sidenav a#backmenu1 {
+  border-bottom: 1px solid black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.hidesmartphone {
+  display: inline;
+}
+
+
+/*--------------------------
+Tablet modalità orizzonatale e verticale
+--------------------------*/
+
+@media all and (min-width: 721px) and (max-width: 1279px)  {
+
+
+
+}
+
+/*--------------------------
+Smartphone
+--------------------------*/
+
+@media all and (max-width: 720px) {
+
+
+
+}

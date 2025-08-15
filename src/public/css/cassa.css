@@ -1,0 +1,655 @@
+/*
+Theme Name: 	CSS base
+Description: 	Responsive Css HTML ecommerce
+Version:     	1.0.0
+Author:
+Text Domain: 	webecommerce
+Domain Path:
+Tags:
+License:    	GNU General Public License v3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/*--------------------------
+General
+--------------------------*/
+
+@font-face {
+  font-family: Antique;
+  src: url(/font/Antique.ttf);
+}
+
+body, html {
+  height: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+div.maindiv {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+div.screentop {
+  height: 10%;;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.screensearchbar {
+  display: inline-block;
+  height: 100%;
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+}
+
+div.screensearchbar input {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  height: 90%;
+  margin: 0px;/* t r b l*/
+  /*padding: 0px;*/
+  padding: 3% 0% 0% 2%;
+  font-size: 30px;
+}
+
+div.screensearchbar div#ok {
+  display: inline-block;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+div.screensearchbar div.Totalxl {
+  display: inline-block;
+  font-size: 30px;
+}
+
+div.screensearchbar div.Totalxl label{
+  display: inline-block;
+}
+
+div.screensearchbar div.Totalxl div{
+  display: inline-block;
+}
+
+div.screenaltro {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  box-sizing: border-box;
+  float: left;
+}
+
+div.screenaltro div#altro {
+  display: inline-block;
+  font-size: 60px;
+  cursor: pointer;
+  height: 100%;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+div.screenaltro label {
+  width: 70%;
+  display: inline-block;
+  font-size: 30px;
+  height: 90%;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+}
+
+div.screendisplay {
+  float: left;
+  height: 90%;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+div.screendisplaytotal {
+  width: 98%;
+  margin-left: 2%;
+  height: 5%;
+  box-sizing: border-box;
+}
+
+div.screendisplay div.screendisplaytotal div.container {
+  width : 25%;
+  float: left;
+  box-sizing: border-box;
+}
+
+div.screendisplay div.screendisplaytotal div.container label {
+  width : 100%;
+  height: 30%;
+  font-size: 7px;
+  font-weight: bold;
+  float: left;
+  box-sizing: border-box;
+}
+
+div.screendisplay div.screendisplaytotal div.container div {
+  width : 100%;
+  height: 30%;
+  float: left;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+div.screendisplaytitle {
+  border: 1px solid gray;
+  width: 96%;
+  margin-left: 2%;
+  height: 3%;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+div.screendisplay div.screendisplaytitle div.description {
+  width : 40%;
+  float: left;
+  box-sizing: border-box;
+}
+
+div.screendisplay div.screendisplaytitle div.quantity {
+  width : 20%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+div.screendisplay div.screendisplaytitle div.unitprice {
+  width : 15%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+div.screendisplay div.screendisplaytitle div.department {
+  width : 10%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div.screendisplay div.screendisplaytitle div.quantityprice {
+  width : 15%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+div.screendisplay div.conto {
+  float: left;
+  border: 1px solid green;
+  height: 92%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+div.screendisplay div.conto ul {
+  list-style: none;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.screendisplay div.conto ul li {
+  border: 1px solid gray;
+  box-sizing: border-box;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.screendisplay div.conto ul li div.recitem {
+  width : 98%;
+  display: inline-block;
+  margin-left: 2%;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+div.screendisplay div.conto ul li div.recitem div.description {
+  width : 40%;
+  float: left;
+  box-sizing: border-box;
+}
+
+div.screendisplay div.conto ul li div.recitem div.quantity {
+  width : 20%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+div.screendisplay div.conto ul li div.recitem div.unitprice {
+  width : 15%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+div.screendisplay div.conto ul li div.recitem div.department {
+  width : 10%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div.screendisplay div.conto ul li div.recitem div.quantityprice {
+  width : 15%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+div.screendisplay div.conto ul li div.rectotal {
+  width : 98%;
+  display: inline-block;
+  margin-left: 2%;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+div.screendisplay div.conto ul li div.rectotal div.description {
+  width : 85%;
+  float: left;
+  box-sizing: border-box;
+}
+
+div.screendisplay div.conto ul li div.rectotal div.payment {
+  width : 15%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+div.screendisplay div.conto ul li div.rectotal div.paymenttype {
+  width : 10%;
+  float: left;
+  box-sizing: border-box;
+  display: none;
+}
+
+div.screendisplay div.conto ul li div.rectotal div.index {
+  width : 10%;
+  float: left;
+  box-sizing: border-box;
+  display: none;
+}
+
+div.screendisplay div.conto ul li div.reclotteryid {
+  width : 98%;
+  display: inline-block;
+  margin-left: 2%;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+div.screendisplay div.conto ul li div.reclotteryid div.lotteryid {
+  width : 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+div.screendisplay div.conto ul li div.reclotteryid div.comment {
+  width : 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+div.screentasti {
+  float: left;
+  border: 1px solid gray;
+  height: 90%;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+div.screentastitop {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+}
+
+div.screentastierino {
+  border: 1px solid gray;
+  box-sizing: border-box;
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+
+div.screenreparti {
+  box-sizing: border-box;
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+
+div.screentastibottom {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+}
+
+div.contenitoretasti {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+div.tasto {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 1px solid red;
+  padding: 10px 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+div.tastoreparto {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 1px solid red;
+  padding: 10px 20px;
+  width:80%;
+  margin: 10%;
+  text-align: center;
+}
+
+div.tastoemetti {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 1px solid red;
+  padding: 10px 20px;
+  width:80%;
+  margin: 10%;
+  text-align: center;
+}
+
+div.tastobottom {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 1px solid red;
+  padding: 10px 20px;
+  width: 20%;
+  margin: 1% 2%;
+  text-align: center;
+}
+
+div.tastoadattivo33 {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 3px outset red;
+  padding: 1.5% 2%;
+  margin: 15px 3%;
+  float: left;
+  width: 27%;
+  text-align: center;
+}
+
+div.tastoadattivo33 label {
+  font-size: 70px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+div.tastoadattivo33testo {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 3px outset red;
+  padding: 1.5% 2%;
+  margin: 15px 3%;
+  float: left;
+  width: 27%;
+  text-align: center;
+}
+
+div.tastoadattivo33testo label {
+  font-size: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+div.tasto label {
+  font-size: 70px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+div.tastoicon {
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 1px solid green;
+  padding: 10px 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+div.tastoicon label {
+  cursor: pointer;
+}
+
+div#finestraopzioni {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+div#finestraopzioni div#mainopzioni {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #888;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+div#finestraopzioni div#mainopzioni div.testata{
+  box-sizing: border-box;
+  height: 10%;
+}
+
+div#finestraopzioni div#mainopzioni div.testata label {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  height: 100%;
+  margin-left: 30px;
+}
+
+div#finestraopzioni div#mainopzioni div.testata span.close {
+  color: #aaaaaa;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  height: 100%;
+}
+
+div#finestraopzioni div#mainopzioni div.testata span.close:hover,
+div#finestraopzioni div#mainopzioni div.testata span.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div#finestraopzioni div#mainopzioni div.contenuto{
+  box-sizing: border-box;
+  height: 90%;
+  width: 80%;
+  float: right;
+}
+
+div#finestraopzioni div#mainopzioni div.contenitoreconti{
+  box-sizing: border-box;
+  width: 20%;
+  height: 90%;
+  border: 1px solid black;
+  float: right;
+}
+
+div#finestraattesa {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  z-index: 20;
+  padding: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+div#finestraattesa div {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #888;
+  font-size: 80px;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+div#finestraconferma {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  z-index: 20;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+  padding-top: 5%;
+  padding-bottom : 5%;
+}
+
+div#finestraconferma div.testo {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 80px;
+  color: white;
+  width: 100%;
+  height: 40%;
+}
+
+div#finestraconferma div.scelte {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 80px;
+  color: white;
+  width: 100%;
+  height: 40%;
+}
+
+div#finestraconferma div.scelte div{
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  font-size: 80px;
+  color: white;
+  width: 50%;
+  height: 40%;
+}
+
+div#finestraconferma div.scelte div label{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 80px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+
+div.tastoconto {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 75px 75px;
+  border: 1px solid red;
+  padding: 10px 20px;
+  width: 80%;
+  margin: 5% 10%;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+div.tastoconto :hover  {
+  cursor: pointer;
+}
+
+/*--------------------------
+Tablet modalità orizzonatale e verticale
+--------------------------*/
+
+@media all and (min-width: 721px) and (max-width: 1279px)  {
+
+
+
+}
+
+/*--------------------------
+Smartphone
+--------------------------*/
+
+@media all and (max-width: 720px) {
+
+
+
+}

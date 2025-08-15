@@ -1,0 +1,602 @@
+/*
+Theme Name: 	Mio Tema
+Description: 	Responsive WordPress Theme based on Boostrap and Font Awesome.
+Version:     	1.0.0
+Author:
+Text Domain: 	miotema
+Domain Path: 	/languages
+Tags:        	grid-layout, blog, custom-menu, featured-images, right-sidebar
+License:    	GNU General Public License v3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+
+body, html, .container{ font-family: 'Archivo Narrow', sans-serif; background: #EEEEEE; margin: 0 0; font-size: 16px; line-height: 24px; height:100%; width:100%;}
+
+
+/*--------------------------
+General
+--------------------------*/
+
+hr{border:none; border-bottom: 1px solid #ddd}
+.button {
+  display: inline-block;
+  background: #fff;
+  font-weight: 900;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* form  */
+input{border: 1px solid #ddd}
+input[type="submit"]{background: #333; color:#fff; border:none;width:70px;}
+input, textarea, select, button {
+  width : 150px;
+  margin: 0;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+pre{overflow: hidden}
+
+/* Video Resposnive */
+figure{margin:0;}
+.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0;}
+.video-container  iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+
+
+.svgiconmenu {
+  content: '';
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.svgiconmenu:hover {
+  cursor: pointer;
+}
+/*--------------------------
+Layout
+--------------------------*/
+
+a{color:#21aabd;}
+a:hover{color:#ee52f4;}
+
+.container {/*max-width: 1200px;*/ margin:0 auto;background: #eee; height:100%;}
+.header-full {
+  background-color: #98805A;
+  display: block;
+  width: 100%;
+  padding:10px 20px 10px 20px;
+  height: 50px;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  padding:10px 20px 10px 20px;
+  height: 50px;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+.header__logo {float:left;color:#fff; text-decoration: none;}
+.header__menu {float: right;padding:0;margin:0;list-style-type: none;}
+.header__menu .menu-item {display: inline-block;}
+.header__menu .menu-item a{padding: 5px 10px; color:#fff;text-decoration: none; font-size: 150%;}
+.header__menu .menu-item a:hover {font-weight: 600; border-radius: 8px; background-color:#9D8B67; }
+.header__icon-bar {display: none;}
+.header__icon-bar span{display: block;background-color: #fff; height: 2px; width: 23px;margin-bottom:5px}
+
+#mydotmenu {cursor: pointer;}
+
+/*--------------------------
+Home
+--------------------------*/
+.title_front_page {
+  position: relative;
+  top:80px;
+  z-index: 3;
+  height: 8%;
+  /*background-color: #98805A;*/
+  text-align: center;
+}
+.logo_front_page {
+  /*background-image: url("http://waltof.dev/wp-content/themes/mio-tema/images/waltoflogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;*/
+
+  height:100%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 5px;
+  color: white;
+
+}
+.logo_front_page span.title {
+  display: block;
+  font-size: 200%;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
+}
+.logo_front_page span.subtitle {
+  display: block;
+  font-size: 120%;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
+}
+.cover {
+  height:100%;
+  /*background-image: url("http://waltof.dev/wp-content/themes/mio-tema/images/part_angolare.jpg");*/
+  background-image: url("/images/homeunlogged/atalanta.jpg");
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+  .cover__filter {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+  }
+    .cover__caption {
+      display: table;
+      height: 85%;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+      .cover__caption__copy {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: #fff;
+        font-size: larger;
+      }
+  .footer_front_page {
+    position: relative;
+    top: -100px;
+    height: 100px;
+    width: auto;
+    /*background-color: #2e8fe8;*/
+    font-size: x-large;
+    z-index: 2;
+    overflow: hidden;
+  }
+    .arrow-rect-left {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1;
+      height: 0;
+      border-top: 100px solid transparent;
+      border-bottom: 0px solid #98805A;
+      border-left: 600px solid #98805A;
+      border-right: 600px solid #98805A;
+    }
+
+    .arrow-rect-left a {
+      display: block;
+      position: relative;
+      top:-80px;/*-100px*/
+      text-align: center;
+      color: #E0E0E0;
+      transform: matrix(1, 0, 0, 0.66, 0, 0);
+      cursor: pointer;
+      line-height: 20px;
+      letter-spacing: 2px;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .arrow-read-more {
+      display: block;
+      position: relative;
+      border-right: 3px solid #E0E0E0;
+      border-bottom: 3px solid #E0E0E0;
+      transform: matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0);
+      width: 24px;
+      height: 24px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+.cover__blog {
+  display: block;
+  height:30%;
+  margin: 0px;
+  background-color: #98805A;
+  /*background-image: url("http://waltof.dev/wp-content/themes/mio-tema/images/scaglielegnolima.jpeg");
+  background-size: contain;
+  background-position: center;*/
+  /*border: 3px solid red;*/
+  position: relative;
+  top: -100px;
+}
+.cover__blog .mio-tema_blogtitle {
+  display: none;
+  position: relative;
+  bottom:-150px;
+  border: 3px solid green;
+  height:100%;
+}
+
+.cover__blog .cover_blog_imgs {
+  display: block;
+  width:25%;
+  height:250px;
+  float: left;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  border-style: double;
+  border-color: #B48F72;
+  border-width: 5px;
+  margin: 2% 4%;
+  position: relative;
+  bottom:-100px;
+}
+.main-title {padding:50px 20px; text-align: center; color:#fff; margin: 0;font-weight: 300;font-size: 50px;}
+
+/*--------------------------
+Page Catalogo, Le essenze
+--------------------------*/
+.products, .essences {
+  position: relative;
+  top: -40px;
+}
+
+.div_featured_miotema_catalogo {
+  display: block;
+  width:25%;
+  height:250px;
+  float: left;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+  border-radius: 6px;
+  margin: 2% 4%;
+}
+
+.div_featured_miotema_essenze {
+  display: block;
+  width:25%;
+  height:250px;
+  float: left;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  margin: 2% 4%;
+}
+  a.link_featured_miotema_catalogo{
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+    .div_featured_miotema_catalogo a span {
+      display: table-cell;
+      width: 100%;
+      color: white;
+      text-align: center;
+      font-size: 170%;
+      vertical-align: bottom;
+    }
+    .div_featured_miotema_essenze a span {
+      display: table-cell;
+      width: 100%;
+      color: white;
+      text-align: center;
+      font-size: 170%;
+      vertical-align: middle;
+    }
+
+/*--------------------------
+Page Contatti
+--------------------------*/
+
+.miotema-contact-img {
+  display: block;
+  float: left;
+  width: 50%;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+  height: 83%;
+}
+.miotema-contact-text {
+  text-align: center;
+  display: block;
+  float: right;
+  width: 50%;
+  padding: 20px;
+}
+.miotema-contact-text .list{
+  display: block;
+  margin: 20px;
+  font-size: 150%;
+}
+/*--------------------------
+Page Filosofia
+--------------------------*/
+.service {
+  width: 100%;
+  float: left;
+  margin: 25px 0px;
+}
+.service .div_featured_miotema_service{
+  float: left;
+  width: 25%;
+  height: 200px;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+  margin-left: 4%;
+  margin-right: 2%;
+  border-radius: 50px;
+}
+.service .div_description_miotema_service{
+  float: left;
+  width: 63%;
+  margin-left: 2%;
+  margin-right: 4%;
+}
+/*--------------------------
+Index, Single, Page
+--------------------------*/
+.img-res{}
+
+.content{width: 100%;float: left;}
+.content__title{font-size: 250%; font-weight: bold;}
+
+	.post{padding:40px; border-bottom: 1px solid #eee;}
+  .post h2 a {color:#98805A;}
+  .post img{max-width: 100%; height: auto;}
+	.content .page{padding:40px; }
+  .content .tag {margin-top:40px;}
+	.content .tag a{background: #666; color:#fff; padding:5px 10px; text-decoration: none; display: inline-block;;margin-top:5px;font-size: 12px;}
+
+	/* Comments */
+	.comments{margin: 40px 0; border-top: 1px solid #eee}
+	.commentlist,
+	.commentlist .children{list-style-type: none}
+
+	.comment-body{margin: 40px 0}
+	.comment-author.vcard img{border-radius: 100%;}
+
+	.comment-form-comment textarea{background: #eee; width:100%;border: 1px solid #ddd;margin-top:5px;}
+	.comment-form-author input,
+	.comment-form-email input,
+	.comment-form-url input{background: #eee; width:200px; max-width:300px;border: 1px solid #ddd;padding:5px}
+
+	.comment-form-author label,
+	.comment-form-email label,
+	.comment-form-url label{ width:100px;display: inline-block;}
+
+	.form-submit input{background: #333; color:#fff; border:none;font-size: 16px;padding: 10px 15px;width: auto;}
+
+  /* Pagination */
+  .pagination{padding:40px;}
+  .pagination a,
+  .pagination span{padding: 10px 15px; border: 1px solid #ddd; text-decoration: none;}
+  .pagination a:hover{background: #eee}
+
+  /* Caption Images */
+  .wp-caption { margin-bottom: 20px; padding: 10px; max-width: 97%; border: 1px solid #ddd; text-align: center; }
+  .wp-caption img { margin: 0; padding: 0; width: 100%!important; height: auto; border: 0 none; }
+  .wp-caption p.wp-caption-text { margin: 0; padding: 8px; font-size: 1em; line-height: 17px; }
+
+  /* Gallery */
+  .gallery { padding: 40px 0 40px 0; width: 100%; }
+  .gallery-item { float: left; width: 33.333333%; text-align: center; }
+  .gallery img { margin: 0 5% 0 5%; width: 90%; height: auto; border: none!important; }
+  .gallery-caption { width: 90%;margin:10px 0 0 0;}
+
+
+  /*single page products*/
+
+  .catalogo_cont{
+    border-bottom: 1px double #98805A;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .catalogo_content__title{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalogo_content__text{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalogo_cont_cover{
+    width: 700px;
+    height: 500px;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+/*--------------------------
+Sidebar
+--------------------------*/
+
+.sidebar{
+  width:100%;
+  float: left;
+  background-color: #98805A;
+  border-top: 4px solid #98805A;
+}
+	.widget{
+    float: left;
+    padding:40px;
+    width: 25%;
+    border:4px solid transparent;
+    border-radius: 10px;
+  }
+	.widget ul{padding: 0;list-style-type: none; background-color: #98805A;}
+	.widget ul li a{ text-decoration: none; display: block;border-bottom: 1px solid #98805A;padding:10px 15px; color: black;}
+  .widget ul li a:hover {color: white;}
+	.widget_search label{display: none;}
+
+footer{
+/*  position: absolute;*/
+  bottom: 0px;
+  padding:10px 30px;
+  background-color: #98805A;
+  width: 100%;
+}
+
+/*--------------------------
+Tablet
+--------------------------*/
+
+@media (max-width: /*998px*/1250px) {
+  .catalogo_content__title{
+    width: 500px;
+  }
+  .catalogo_content__text{
+    width: 500px;
+  }
+  .catalogo_cont_cover{
+    width: 500px;
+    height: 330px;
+  }
+
+  .cover__blog .cover_blog_imgs {
+    width:33%;
+    margin: 4% 8%;
+  }
+
+  .cover__blog .img3 {
+    display: none;
+  }
+
+  .arrow-rect-left {
+    border-left: 300px solid #98805A;
+    border-right: 300px solid #98805A;
+  }
+
+  .miotema-contact-img {
+    width: 100%;
+  }
+  .miotema-contact-text {
+    width: 100%;
+  }
+}
+
+
+/*--------------------------
+Smartphone
+--------------------------*/
+
+@media (max-width: 767px) {
+  .catalogo_content__title{
+    width: 250px;
+  }
+  .catalogo_content__text{
+    width: 250px;
+  }
+  .catalogo_cont_cover{
+    width: 250px;
+    height: 180px;
+  }
+
+  .cover__blog .cover_blog_imgs {
+    width:70%;
+    margin: 4% 14%;
+    height:180px;
+  }
+
+  .cover__blog .img3 , .cover__blog .img2 {
+    display: none;
+  }
+
+  .div_featured_miotema_essenze {
+    width:90%;
+  }
+  .div_featured_miotema_catalogo {
+    width:90%;
+  }
+
+  .arrow-rect-left {
+    border-left: 90px solid #98805A;
+    border-right: 90px solid #98805A;
+  }
+  .arrow-rect-left a {
+    font-size: 10px;
+  }
+	/*header & menu */
+  .menudesktop__icon-bar {display: none;}
+  .header {height: auto; display: block;}
+	.header__logo{margin-bottom:0px; max-width: 70%; overflow: hidden;}
+	.header__menu{width:100%;height: 0;overflow: hidden;
+		-webkit-transition: all 0.3s ease-out;
+						transition: all 0.3s ease-out;
+	}
+	.header__menu .menu-item{
+    display: block;
+    background-color: #98805A;
+  }
+	.header__menu .menu-item a{display: block;padding:10px 15px; border-bottom:1px solid #666;}
+
+	.header__icon-bar{float: right;display: block;}
+	.show-menu{height:300px;overflow: auto; margin-top: 20px;}
+
+	/* content layout */
+	.main-title{font-size: 32px;}
+	.content,
+	.sidebar{width:100%;}
+
+  /* Gallery */
+  .gallery-caption{ font-size: 12px;}
+
+  /*sidebar*/
+  .widget{ width: 80%;}
+
+}
+
+/* Clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

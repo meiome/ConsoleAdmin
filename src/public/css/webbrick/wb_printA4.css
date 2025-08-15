@@ -1,0 +1,14 @@
+#PageFrame{
+    width:210mm;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding:1cm;
+
+}
+
+.wb-row{
+    border-bottom:1px solid black;
+    
+}
+

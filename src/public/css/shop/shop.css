@@ -1,0 +1,1387 @@
+/*
+Theme Name: 	CSS base
+Description: 	Responsive Css HTML ecommerce
+Version:     	1.0.0
+Author:
+Text Domain: 	webecommerce
+Domain Path: 	/languages
+Tags:
+License:    	GNU General Public License v3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/*--------------------------
+General
+--------------------------*/
+
+.dropbtn {
+  background-color: #ea6c62;
+  color: white;
+  padding: 0px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  border: none;
+}
+
+.dropbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99995;
+  left: -50px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: small;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {border: 1px solid white;}
+
+@font-face {
+  font-family: Antique;
+  src: url(/fonts/shop/Antique.ttf);
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border-right: 1px solid #5fb9c7;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  word-wrap: break-word;
+}
+
+.sidenav a.gmenu2 {
+  background-color: #f296a2;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #5fb9c7;
+}
+
+#gmenutitlecategorie, #gmenutitleinformazioni {
+  border-top: 0.5px solid lightgray;
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#gmenutitlecategorie:hover, #gmenutitleinformazioni:hover {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.sidenav a.closebtn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.sidenav a#accedi {
+  background-color: #5fb9c7;
+  border-top: 10px solid #5fb9c7;
+  font-size: 15px;
+}
+
+.sidenav a#backmenu1 {
+  border-bottom: 1px solid black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.hidesmartphone {
+  display: inline;
+}
+
+a.condividilink {
+  height: 20px;
+  margin: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-sizing: border-box;
+}
+
+a.condividilink img {
+  display: inline-block;
+  height: 20px;
+  margin: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+a.marketinglink {
+  height: 35px;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  box-sizing: border-box;
+}
+
+a.marketinglink img {
+  display: inline-block;
+  height: 35px;
+  margin: 0;
+  object-fit: cover;
+  float: left;
+  box-sizing: border-box;
+}
+
+a.marketinglink span {
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  float: left;
+  color: white;
+  box-sizing: border-box;
+}
+
+a.marketinglink span:hover {
+  color: white;
+}
+
+a.userlink {
+  height: 35px;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: right;
+  box-sizing: border-box;
+  line-height: 35px;
+}
+
+a.userlink img {
+  display: inline-block;
+  height: 35px;
+  object-fit: contain;
+  float: left;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 3px;
+}
+
+a.userlink span {
+  color: white;
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  box-sizing: border-box;
+}
+
+a.userlink span:hover {
+  color: white;
+}
+
+body, html, .container{
+  font-family:'Book Antiqua','Source Sans Pro','Archivo Narrow', sans-serif;
+  background: white;
+  margin: 0;
+  height:100%;
+  width:100%;
+  font-size: medium;
+}
+
+header#pageHeader {
+  background-color: #ea6c62;
+  width: 100%;
+  transition: 0.5s;
+  height: 45px;
+  padding: 3px 3px;
+  box-sizing: border-box;
+}
+
+div.toggler {
+  height: 33px;
+  float: left;
+  box-sizing: border-box;
+  width: auto;
+  margin: 1px 0px 1px 6px;
+  border: 1px solid black;
+}
+
+div.toggler img {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  float: left;
+  box-sizing: border-box;
+  border: 5px solid #ea6c62;
+  background-color: #ea6c62;
+}
+
+div.toggler:hover {
+  border: 1px solid white;
+}
+
+div#PanelCategory {
+  background-color: #ea6c62;
+  width: 100%;
+  transition: 0.5s;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+div#conteinercategory {
+  float: left;
+  width: auto;
+  height: 35px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div#conteinercategory a {
+  height: 35px;
+  width: auto;
+  font-size: 13px;
+  line-height: 35px;
+  margin: 0px 5px;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #ea6c62;
+}
+
+div#conteinercategory a:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+div.searchinputtop {
+  box-sizing: border-box;
+  float: left;
+  height: 35px;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 0px;
+  width: auto;
+  border: 0.3px solid #5fb9c7;
+}
+
+div.searchinputtop input {
+  box-sizing: border-box;
+  height: 35px;
+  width: 300px;
+}
+
+div.searchinputtopicon {
+  box-sizing: border-box;
+  float: left;
+  height: 35px;
+  margin: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: auto;
+}
+
+div.searchinputtopicon img{
+  object-fit: cover;
+  background-color: #5fb9c7;
+  border: 7px solid #5fb9c7;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+div.bannerrettangolo {
+  width:100%;
+  box-sizing: border-box;
+}
+
+div.bannerrettangolo div.testo {
+  font-family: Antique;
+  width:100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 30px;
+  color: #61c0c8;
+  text-align: center;
+}
+
+div#dettaglioarticolo {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  width: 100%;
+  transition: 0.5s;
+  padding: 10px 1%;
+  /*height: 700px;*/
+  height: auto;
+}
+
+div#dettaglioarticolo div#articoloaggiunto {
+  box-sizing: border-box;
+  background-color: green;
+  width: 90%;
+  margin: 5px 5%;
+  padding: 10px 1%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  /*height: 700px;*/
+  height: auto;
+}
+
+div#dettaglioarticolo div.containerfoto {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  width: 45%;
+  margin: 0px;
+  /*border: 1px solid red;*/
+  vertical-align: top;
+  /*height: 100%;*/
+  height: auto;
+}
+
+div#dettaglioarticolo div.containerfoto div.listafoto {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  width: 10%;
+  margin: 0px;
+  /*border: 1px solid red;*/
+  vertical-align: top;
+  /*height: 100%;*/
+  height: auto;
+}
+
+div#dettaglioarticolo div.containerfoto div.listafoto img {
+  width: 92%;
+  object-fit: cover;
+  box-sizing: border-box;
+  height: 90px;
+  margin: 4px 4%;
+  border: 2px solid #5fb9c7;
+}
+
+div#dettaglioarticolo div.containerfoto div.vistafoto {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  width: 90%;
+  margin: 0px;
+  /*border: 1px solid red;*/
+  vertical-align: top;
+  /*height: 100%;*/
+  height: auto;
+}
+
+div#dettaglioarticolo div.containerfoto div.vistafoto img {
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  height: auto;
+  max-height: 100%;
+}
+
+div#dettaglioarticolo div.containerdescrizione {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  width: 35%;
+  margin: 0px;
+  /*border: 1px solid red;*/
+  /*height: 100%;*/
+  height: auto;
+  vertical-align: top;
+}
+
+div#dettaglioarticolo div.containerdescrizione h1.nomearticolo{
+  margin: 20px 5%;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 90%;
+  /*border: 1px solid pink;*/
+}
+
+div#dettaglioarticolo div.containerdescrizione div#eurokg{
+  margin: 20px 5%;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 90%;
+  /*border: 1px solid pink;*/
+}
+
+div#dettaglioarticolo div.containerdescrizione div#eurokg span#dascontareeurokg{
+  text-decoration: line-through;
+  color:gray;
+  font-size: 15px;
+}
+
+div#dettaglioarticolo div.containerdescrizione div.titleformati{
+  box-sizing: border-box;
+  width: 96%;
+  /*border: 1px solid black;*/
+  height:auto;
+  margin: 0% 2%;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+div#dettaglioarticolo div.containerdescrizione div.umordinabili{
+  box-sizing: border-box;
+  width: 100%;
+  /*border: 1px solid black;*/
+  height: auto;
+}
+
+div.ch{
+  box-sizing: border-box;
+  width: 100%;
+  /*float: left;*/
+  margin: 0;
+  height: auto;
+  display: inline-block;
+}
+
+div.ch a {
+  text-decoration: none;
+  color: black;
+}
+
+div.ch div.contenum {
+  box-sizing: border-box;
+  border: 0.5px solid #bfbfbf;
+  border-radius: 1px;
+  width: 46%;
+  /*float: left;*/
+  margin: 2% 2%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+
+}
+
+div.ch div.contenum:hover {
+  cursor: pointer;
+  background-color: #f296a2;
+}
+
+div.ch div.esponiprezzoum {
+  box-sizing: border-box;
+  width: auto;
+  /*float: left;*/
+  margin: 2% 2%;
+  height: auto;
+  text-align: left;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  color: #a6a6a6;
+  background-color: white;
+  padding: 0px 2px;
+}
+
+div#dettaglioarticolo div.containerdescrizione div.infoprodotto{
+  box-sizing: border-box;
+  width: 100%;
+  /*border: 1px solid orange;*/
+  height: auto;
+  font-size: 13px;
+  padding: 3px 3px;
+}
+
+div#dettaglioarticolo div.containerdescrizione div.infoprodotto div.mostrainfoprodotto{
+  box-sizing: border-box;
+  width: 100%;
+  /*border: 1px solid red;*/
+  height: auto;
+  color: #0066c0;
+}
+
+div#dettaglioarticolo div.containerdescrizione div.infoprodotto div.infoprodottotesto{
+  box-sizing: border-box;
+  width: 100%;
+  /*border: 1px solid red;*/
+  height: auto;
+  display: block;
+  wrap:break-word;
+}
+
+div#dettaglioarticolo div.containeraddcart {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  width: 20%;
+  margin: 0px;
+  /*border: 1px solid red;*/
+  /*height: 100%;*/
+  height: auto;
+  vertical-align: top;
+}
+
+div#dettaglioarticolo div.containeraddcart div.condividi {
+  box-sizing: border-box;
+  background-color: white;
+  width: 90%;
+  margin: 5px 5%;
+  /*border: 1px solid red;*/
+  /*height: 100%;*/
+  height: auto;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato {
+  width: 98%;
+  margin: 3px 1%;
+  height: auto;
+  box-sizing: border-box;
+  border: 1.5px solid #dddddd;
+  border-radius: 8px;
+  padding: 10px 10px;
+
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.prezzo {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.prezzo span.finale {
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+  height: auto;
+  font-weight: 600;
+  font-size: 18px;
+  color: #8B0000;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.prezzo span.dascontare {
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  height: auto;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-left: 3px;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.costispedizione {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 13px;
+  padding: 4px 0px;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.dataconsegna {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 13px;
+  padding: 4px 0px;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.disponibile {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 18px;
+  padding: 4px 0px;
+  color: #007600;
+  font-weight: 500;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.qty {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 14px;
+  padding: 10px 0px 10px 0px; /*top r bottom l*/
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.qty input {
+  width: 55px;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 14px;
+  padding: 0px 0px 0px 0px; /*top r bottom l*/
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.aggiungi {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 14px;
+  padding: 4px 0px;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.aggiungi button {
+  width: 100%;
+  min-height: 35px;
+  box-sizing: border-box;
+  margin: 0px 0px 0px 0px; /*top r bottom l*/
+  padding: 6px 0px 6px 0px; /*top r bottom l*/
+  background-color: #5fb9c7;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.aggiungi button:hover {
+  cursor:pointer;
+  background-color: #f296a2;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.aggiungi button span.iconcart {
+  box-sizing: border-box;
+  background-image: url(/images/icons/shoppingcart32.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+  width: 13%;
+  height: 20px;
+  margin: 0px 0px 0px 2%; /*top r bottom l*/
+  background-color: transparent;
+  display: inline-block;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.aggiungi button span.textaddcart {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 85%;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+}
+
+div#dettaglioarticolo div.containeraddcart div.containerbordato div.vendutoespeditoda {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 13px;
+  padding: 4px 0px;
+}
+
+div#prodotti {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  width: 100%;
+  transition: 0.5s;
+  padding: 10px 1%;
+}
+
+div#footer {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  /*width: 75%;*/
+  width: 100%;
+  transition: 0.5s;
+  padding: 10px 1%;
+  background-color: #ea6c62;
+  color: white;
+}
+
+div#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+div#footer div#tornasu{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+div#footer div#tornasu:hover{
+  background-color: #f296a2;
+}
+
+a.ricercaarticolo {
+}
+
+a.ricercaarticolo div.containera {
+    height: 250px;
+    width: 19.8%;
+    margin: 5px 0.1%;
+    display: inline-block;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+a.ricercaarticolo div.containera img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+a.ricercaarticolo div.containera div.containerdettagli {
+  width: 86%;
+  margin: 0 7%;
+}
+
+a.ricercaarticolo div.containera div.containerdettagli div.prezzo {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+}
+
+a.ricercaarticolo div.containera div.containerdettagli div.prezzo span.finale {
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+  height: 100%;
+  font-weight: 600;
+  font-size: 13px;
+  color: #8B0000;
+}
+
+a.ricercaarticolo div.containera div.containerdettagli div.prezzo span.dascontare {
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  height: 100%;
+  font-weight: 300;
+  font-size: 11px;
+  text-decoration: line-through;
+  margin-left: 3px;
+}
+
+a.ricercaarticolo div.containera div.containerdettagli div.descrizione {
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+  /*border: 1px solid blue;*/
+  text-align: left;
+  overflow: hidden;
+}
+
+a.ricercaarticolo div.containera div.containerdettagli div.descrizione span {
+  font-size: 16px;
+  color: #4169E1;
+}
+
+div#contenitorecarrello{
+  width: 80%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 13px;
+  padding: 4px 4px;
+  display:inline-block;
+}
+
+div#concludiordine{
+  border: 1px solid red;
+  width: 20%;
+  height: auto;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+  text-align: left;
+  font-size: 13px;
+  padding: 4px 0px;
+  display:inline-block;
+}
+
+ul#carrello {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul#carrello form {
+  display: inline-block;
+  margin: 2px 0px 2px 0px; /*Top R Bottom L*/
+}
+
+ul#carrello select {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+option {
+  cursor: pointer;
+}
+
+input.quantityaggiorna {
+  max-width: 40px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 2px 0px 2px 0px; /*Top R Bottom L*/
+}
+
+input.submitaggiorna {
+  /*max-width: 40px;*/
+  font-size: 13px;
+  cursor: pointer;
+  /*border-width: 2px;*/
+  padding:4px;
+  border: 0.5px solid #cdc7c2;
+  background-color: #f3f1f0;
+  border-radius: 5px;
+  margin: 2px 0px 2px 0px; /*Top R Bottom L*/
+}
+
+input.rimuoviriga {
+  max-width: 100%;
+  color: #0066c0;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+div.contenitoreriga {
+  width: 100%;
+  min-height: 80px;
+  box-sizing: border-box;
+  padding: 3px 0px;
+  border-bottom: 1px solid #696969;
+}
+
+div.contenitoreriga div.divfotoart {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+div.contenitoreriga div.divfotoart img {
+  object-fit: cover;
+  box-sizing: border-box;
+  height: auto;
+  max-height: 150px;
+  max-width: 100%;
+}
+
+div.contenitoreriga div.articlename {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  vertical-align:middle;
+  padding: 0px 2px;
+}
+
+div.contenitoreriga div.articlename a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  height: auto;
+}
+
+div.contenitoreriga div.umname {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  box-sizing: border-box;
+  vertical-align:middle;
+  padding: 0px 2px;
+  cursor: default;
+}
+
+div.contenitoreriga div.umname span{
+  width: 100%;
+  display: inline-block;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center;
+  height: auto;
+  color: #FF4500;
+}
+
+div.contenitoreriga div.contqtaprezzo {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  vertical-align:middle;
+  padding: 0px 2px;
+}
+
+div.contenitoreriga div.contqtaprezzo div.qta {
+  display: inline-block;
+  width: 100%;
+  /*height: 50%;*/
+  box-sizing: border-box;
+  vertical-align:middle;
+  padding: 0px 0px;
+}
+
+div.contenitoreriga div.contqtaprezzo div.qta span.minus {
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+  border: 0.7px solid #808080;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+div.contenitoreriga div.contqtaprezzo div.qta span.val {
+  display: inline-block;
+  width: 40%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: default;
+}
+
+div.contenitoreriga div.contqtaprezzo div.qta span.plus {
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+  border: 0.7px solid #808080;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+div.contenitoreriga div.contqtaprezzo div.qta span.plus:hover {
+  background-color: #4e914c;
+}
+
+div.contenitoreriga div.contqtaprezzo div.qta span.minus:hover {
+  background-color: #FF4500;
+}
+
+div.contenitoreriga div.contqtaprezzo div.prezzoriga {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  vertical-align:middle;
+  padding: 0px 0px;
+  cursor: default;
+}
+
+div.contenitoreriga div.contqtaprezzo div.prezzoriga span {
+  box-sizing: border-box;
+  color: gray;
+}
+
+/*--------------------------
+Tablet modalità orizzonatale e verticale
+--------------------------*/
+
+@media all and (min-width: 721px) and (max-width: 1279px)  {
+
+
+
+  .hidesmartphone {
+    display: none;
+  }
+
+  a#linkistagram, a#linkfacebook, a#linkconsegne {
+    display: none;
+  }
+
+  header#pageHeader {
+    width: 100%;
+  }
+
+  div.toggler{
+    display: block;
+  }
+
+  div#PanelCategory {
+    width: 100%;
+  }
+
+  div#conteinercategory {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  div.searchinputtop {
+    float: left;
+    height: 35px;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+    border: 0.3px solid #5fb9c7;
+  }
+
+  div.searchinputtop input {
+    width: 250px;
+  }
+
+  div.searchinputtopicon {
+    float: left;
+    height: 35px;
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+  }
+
+  div.searchinputtopicon img{
+    object-fit: cover;
+    background-color: #5fb9c7;
+    border: 7px solid #5fb9c7;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  div.bannerrettangolo div.testo {
+    font-size: 30px;
+  }
+
+  div#dettaglioarticolo {
+    width: 100%;
+  }
+
+  div#dettaglioarticolo div#articoloaggiunto {
+    width: 99%;
+    margin: 5px 0.5%;
+    padding: 10px 0.5%;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  div#dettaglioarticolo div.containerfoto div.listafoto {
+    width: 20%;
+  }
+
+  div#dettaglioarticolo div.containerfoto div.listafoto img {
+    width: 92%;
+    height: auto;
+    margin: 2px 4%;
+  }
+
+  div#dettaglioarticolo div.containerfoto div.vistafoto {
+    width: 80%;
+  }
+
+  div#prodotti {
+    width: 100%;
+  }
+
+  div#footer {
+    width: 100%;
+  }
+
+  a.ricercaarticolo div.containera {
+      height: 250px;
+      width: 33.1%;
+      margin: 5px 0.1%;
+  }
+
+  div#iconopencarrello {
+    display: block;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 5px;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 4px;
+    box-sizing: border-box;
+    z-index: 99999;
+    background: url(/imgs/shop/icons/shoppingcart32.png) no-repeat center;
+    border-radius: 25px;
+    border: 3px solid #5fb9c7;
+    padding: 30px;
+    background-color: #f296a2;
+  }
+
+  div#iconclosecarrello {
+    display: none;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 4px;
+    box-sizing: border-box;
+    z-index: 99999;
+    background: url(/images/icons/close32.png) no-repeat center;
+    border-radius: 25px;
+    border: 3px solid #5fb9c7;
+    padding: 30px;
+    background-color: #f296a2;
+  }
+
+}
+
+/*--------------------------
+Smartphone
+--------------------------*/
+
+@media all and (max-width: 720px) {
+
+  .hidesmartphone {
+    display: none;
+  }
+
+  a#linkistagram, a#linkfacebook, a#linkconsegne {
+    display: none;
+  }
+
+  a.userlink span {
+    font-size: small;
+    margin-right: 1px;
+  }
+
+  header#pageHeader {
+    width: 100%;
+  }
+
+  div.toggler{
+    display: block;
+  }
+
+  div#PanelCategory {
+    width: 100%;
+  }
+
+  div#conteinercategory {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  div.searchinputtop {
+    float: left;
+    height: 35px;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+    border: 0.3px solid #5fb9c7;
+  }
+
+  div.searchinputtop input {
+    width: 150px;
+  }
+
+  div.searchinputtopicon {
+    float: left;
+    height: 35px;
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+  }
+
+  div.searchinputtopicon img {
+    object-fit: cover;
+    background-color: #5fb9c7;
+    border: 7px solid #5fb9c7;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  div.bannerrettangolo div.testo {
+    font-size: 15px;
+  }
+
+  div#dettaglioarticolo {
+    width: 100%;
+  }
+
+  div#dettaglioarticolo div#articoloaggiunto {
+    width: 99%;
+    margin: 5px 0.5%;
+    padding: 10px 0.5%;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  div#dettaglioarticolo div.containerfoto {
+    height: auto;
+    width: 100%;
+    position: relative;
+    /*top: 300px;*/
+  }
+
+  div#dettaglioarticolo div.containerfoto div.listafoto {
+    width: 20%;
+  }
+
+  div#dettaglioarticolo div.containerfoto div.listafoto img {
+    width: 92%;
+    height: auto;
+    margin: 2px 4%;
+  }
+
+  div#dettaglioarticolo div.containerfoto div.vistafoto {
+    width: 80%;
+  }
+
+  div#dettaglioarticolo div.containerdescrizione {
+    width: 100%;
+    /*position: relative;
+    top: -300px;*/
+  }
+
+  div#dettaglioarticolo div.containerdescrizione div.infoprodotto div.infoprodottotesto{
+    display: none;
+  }
+
+  div#dettaglioarticolo div.containeraddcart {
+    width: 100%;
+  }
+
+  div#prodotti {
+    width: 100%;
+  }
+
+  div#footer {
+    width: 100%;
+  }
+
+  a.ricercaarticolo div.containera {
+      height: 250px;
+      width: 99%;
+      margin: 5px 0.5%;
+  }
+
+  div#contenitorecarrello{
+    width: 100%;
+  }
+
+  div#concludiordine{
+    width: 100%;
+  }
+
+  input.rimuoviriga {
+    font-size: 10px;
+  }
+
+  div.contenitoreriga div.articlename {
+    width: 35%;
+  }
+
+  div#iconopencarrello {
+    display: block;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 4px;
+    box-sizing: border-box;
+    z-index: 99999;
+    background: url(/images/icons/shoppingcart32.png) no-repeat center;
+    border-radius: 25px;
+    border: 3px solid #5fb9c7;
+    padding: 30px;
+    background-color: #f296a2;
+  }
+
+  div#iconclosecarrello {
+    display: none;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 4px;
+    box-sizing: border-box;
+    z-index: 99999;
+    background: url(/images/icons/close32.png) no-repeat center;
+    border-radius: 25px;
+    border: 3px solid #5fb9c7;
+    padding: 30px;
+    background-color: #f296a2;
+  }
+
+
+}

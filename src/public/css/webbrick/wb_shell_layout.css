@@ -1,0 +1,623 @@
+
+*{
+	font-family: QuickSand;
+}
+
+body{
+	background-color: #eef5f9;
+}
+
+
+
+/* ------------------------------------------------------------------------
+* Common elements
+ -------------------------------------------------------------------------*/
+
+.wb-sidenav-list{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+.wb-sidenav-list > li{
+	color:white;
+	margin: 0px;
+	padding: 16px;
+}
+
+.wb-sidenav-list > li > img{
+	width:24px;
+	height: 24px;
+	padding-left: 16px;
+	padding-right: 32px;
+	vertical-align: middle;
+}
+
+.wb-sidenav-list > li > a > span{
+    font-size: 14px;
+	font-weight: 600;
+	vertical-align: middle;
+	display:none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.wb-sidenav-list > li{
+		color:white;
+		margin: 0px;
+		padding: 16px 0px 16px 0px;
+	}
+
+	.wb-sidenav-list > li > a > img{
+		width:24px;
+		height: 24px;
+		padding-left: 18px;
+		padding-right: 18px;
+		vertical-align: middle;
+	}
+
+	.wb-sidenav-list > li > a > span{
+		font-size: 14px;
+		font-weight: 600;
+		vertical-align: middle;
+		display:inline-block;
+	}
+
+}
+
+
+@media only screen and (min-width: 1290px) {
+	.wb-sidenav-list > li{
+		color:white;
+		margin: 0px;
+		padding: 16px;
+	}
+
+	.wb-sidenav-list > li > img{
+		width:24px;
+		height: 24px;
+		padding-left: 16px;
+		padding-right: 32px;
+		vertical-align: middle;
+	}
+	.wb-sidenav-list > li > span{
+		font-size: 14px;
+		font-weight: 600;
+		vertical-align: middle;
+		display: inline-block;
+	}
+}
+
+
+/* ------------------------------------------------------------------------
+* WBAppBar
+* Barra menu applicazione
+ -------------------------------------------------------------------------*/
+#WBAppBar{
+	width:100%;
+	position: fixed;
+	top: 0px;
+	left:0px;
+	background-color: white;
+	z-index: 4;
+	background-color: deepskyblue;
+}
+
+#WBAppBar > .body{
+	width: 100%;
+	//height: 56px;
+}
+
+.wb-app-bar-spacer{
+	height: 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+	#WBAppBar.wb-sidenav-right-pin{
+		padding-right: 250px;
+	}
+
+	.wb-app-bar-spacer{
+		height: 64px;
+	}
+}
+
+
+
+
+#wbAppBody{
+	width:100%;
+	padding-left: 0px;
+	min-height: 100%;
+	background-color: #edf1f5;
+	padding-bottom:64px;
+}
+
+@media only screen and (min-width: 1024px) {
+	#wbAppBody{
+		width:100%;
+		padding-left:64px;
+	}
+}
+
+@media only screen and (min-width: 1290px) {
+	#wbAppBody{
+		width:100%;
+		padding-left:320px;
+
+	}
+}
+
+
+
+
+.wb-toolbar{
+	display: inline-block;
+	color:gray;
+}
+
+.wb-toolbar > .body{
+
+}
+
+.wb-toolbar.left{float:left;}
+
+.wb-toolbar.right{float: right;}
+
+.wb-toolbar {
+	list-style-type: none;
+	padding: 0px;
+	margin:0px;
+	//height: 56px;
+
+}
+
+.wb-toolbar > li{
+	display: inline-block;
+	padding: 0px;
+	margin:0px;
+	color: white;
+	vertical-align: middle;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.wb-toolbar > li.disable{
+	display: none;
+}
+
+.wb-toolbar > li > img{
+	height: 24px;
+	width:24px;
+	padding:16px;
+}
+.wb-toolbar > li > a > img{
+	height: 24px;
+	width:24px;
+	padding:16px;
+}
+
+.wb-toolbar > li > select{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+.wb-toolbar > li > select > option{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.wb-toolbar.left{
+		padding-left: 4px;
+	}
+	.wb-toolbar.right{
+		padding-right: 4px;
+	}
+	.wb-toolbar > li > img{
+		padding:20px;
+		cursor: pointer;
+	}
+	.wb-toolbar > li > a > img{
+		padding:20px;
+	}
+}
+
+/*
+.wb-toolbar >  li:hover .wb-toolbar-menu{
+	display:block;
+}*/
+
+.wb-toolbar-menu{
+	display:none;
+	position: absolute;
+      background-color: white;
+      left: -100%;
+	list-style-type:none;
+	padding:0px;
+}
+
+.wb-toolbar-menu.show{
+	display: block;
+}
+
+
+.wb-toolbar-menu > li{
+    color: black;
+    padding:8px;
+}
+
+
+/* ------------------------------------------------------------------------
+* Side nav
+ -------------------------------------------------------------------------*/
+.wb-app-sidenav{
+	position: fixed;
+	display: inline-block;
+	z-index: 0;
+	display: block;
+	height: 100%;
+	width: 0%;
+	overflow: hidden;
+	background-color: rgba(84, 84, 84, 0.58);
+	-webkit-transition: width 0.3s; /* Safari */
+	transition: width 0.3s;
+	transition-timing-function: linear;
+	top:0px;
+}
+
+.wb-app-sidenav{
+	width:320px;
+}
+
+.wb-app-sidenav > .header{
+	width: 100%;
+	z-index: 3;
+	padding-bottom: 64px;
+	max-width: 320px;
+	background-color: #278df9;
+}
+
+.wb-app-sidenav > .body{
+	max-width:280px;
+	background-color: dodgerblue;
+	height: inherit;
+}
+
+.wb-app-sidenav.left{
+	left: 0px;
+}
+
+
+.wb-app-sidenav.right{
+	right: 0px;
+}
+
+/*
+* Sidenav states
+*/
+.wb-app-sidenav.show{
+	z-index: 5;
+	display: block;
+	width: 100%;
+}
+.wb-app-sidenav.left.show{
+	padding-right: 56px;
+}
+
+
+.wb-app-sidenav.pinned{
+	display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	.wb-app-sidenav{
+		width:64px;
+		height: 100%;
+		z-index: 3;
+		display: block;
+	}
+
+	.wb-app-sidenav .wb-sidenav-list{
+		width:320px;
+
+	}
+	/*
+	.wb-app-sidenav:hover{
+		width:320px;
+
+	}*/
+}
+
+
+
+@media only screen and (min-width: 1290px) {
+	.wb-app-sidenav{
+		width:320px;
+		height: 100%;
+		z-index: 3;
+		display: block;
+	}
+	.wb-app-sidenav > .body{
+		max-width: 320px;
+	}
+	.wb-app-sidenav.left{
+		padding-right: 0px;
+	}
+
+	.wb-app-sidenav.pinned{
+		width:320px;
+		height: 100%;
+		z-index: 60;
+		display: block;
+	}
+
+
+	/* Float */
+	.wb-app-sidenav.float {
+		width:320px;
+		height: 100%;
+		z-index: 60;
+		display: block;
+	}
+
+	.wb-app-sidenav.float > .body{
+		background-color: white;
+		//padding: 16px;
+		//background-color: transparent;
+	}
+
+	.wb-app-sidenav.float > .body > section{
+		background-color: white;
+    	//box-shadow: 0px 0px 2px 3px lightgrey;
+	}
+
+	/* Float card */
+	.wb-app-sidenav.float-card {
+		width:320px;
+		height: 100%;
+		z-index: 60;
+		display: block;
+	}
+
+	.wb-app-sidenav.float-card > .body{
+		padding: 16px;
+		background-color: transparent;
+	}
+
+	.wb-app-sidenav.float-card > .body > section{
+		background-color: white;
+		box-shadow: 0px 0px 2px 3px lightgrey;
+	}
+
+}
+
+
+
+
+
+.wb-app-sidenav > .body > ul{
+list-style-type: none;
+    padding: 0px;
+    padding-left: 16px;
+
+}
+
+
+.wb-app-sidenav > .body > ul > li{
+     height: 48px;
+    text-align: left;
+    vertical-align: middle
+
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------
+* Side nav
+ -------------------------------------------------------------------------*/
+
+/*
+#wbAppSideNav{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	display: inline-block;
+	z-index: 0;
+	display: block;
+	height: 100%;
+	width: 0%;
+	overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.14);
+	-webkit-transition: width 0.3s;
+    transition: width 0.3s;
+	transition-timing-function: linear;
+}
+
+#wbAppSideNav.show{
+	z-index: 60;
+	display: block;
+	width: 100%;
+}
+
+#wbAppSideNav > .body{
+	width:250px;
+	background-color: dodgerblue;
+	height: 100%;
+}
+
+#wbAppSideNav > .body > .close{
+	width:250px;
+	background-color: dodgerblue;
+	height: 100%;
+}
+
+.wb-sidenav-list{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.wb-sidenav-list > li{
+	color:white;
+	margin: 0px;
+	padding: 16px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+	#wbAppSideNav{
+		width:250px;
+		height: 100%;
+		z-index: 20;
+	}
+
+	#wbAppSideNav > .body{
+
+
+
+	}
+
+
+
+}
+*/
+/* ------------------------------------------------------------------------
+* Side nav right
+ -------------------------------------------------------------------------*/
+/*
+#wbAppRightNav{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	display: inline-block;
+	z-index: 0;
+	display: block;
+	height: 100%;
+	width: 0%;
+	overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.14);
+	-webkit-transition: width 0.3s;
+    transition: width 0.3s;
+	transition-timing-function: linear;
+}
+
+#wbAppRightNav.show{
+	z-index: 60;
+	display: block;
+	width: 100%;
+}
+
+#wbAppRightNav > .body{
+	width:250px;
+	background-color: dodgerblue;
+	height: 100%;
+}
+
+#wbAppRightNav > .body > .close{
+	width:250px;
+	background-color: dodgerblue;
+	height: 100%;
+}
+*/
+
+
+.wb-sidenav > .body > section{
+
+
+}
+
+
+/* ------------------------------------------------------------------------
+* App toolbar
+ -------------------------------------------------------------------------*/
+.wb-app-toolbar{
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	z-index: 2;
+	box-shadow: 0px 0px 2px 3px lightgrey;
+}
+
+.wb-app-toolbar >.body{
+	width: 100%;
+	background-color: white;
+	display: inline-block;
+}
+
+.wb-app-toolbar-spacer{
+	width: 100%;
+	height: 56px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	.wb-app-toolbar{
+		padding-left: 64px;
+		top: 64px;
+		bottom: auto;
+		box-shadow: 0px 0px 2px 3px lightgrey;
+	}
+
+	.wb-app-toolbar-spacer{
+		width: 100%;
+		height: 64px;
+	}
+}
+
+@media only screen and (min-width: 1290px) {
+	.wb-app-toolbar{
+		padding-left: 320px;
+		top: 64px;
+		bottom: auto;
+		box-shadow: 0px 0px 2px 3px lightgrey;
+	}
+
+	.wb-app-toolbar-spacer{
+		width: 100%;
+		height: 64px;
+	}
+}
+
+
+
+
+
+
+
+
+#wbAppBody.wb-sidenav-right-pin{
+	padding-right: 320px;
+}
+
+
+#wbAppBody.wb-sidenav-left-pin{
+	padding-left: 320px;
+}
+
+/*
+@media only screen and (min-width: 1200px) {
+	#wbAppBody{
+		padding-left: 320px;
+	}
+
+}
+*/
+
+.wb-panel{
+	    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
